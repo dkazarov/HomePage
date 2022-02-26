@@ -11,6 +11,7 @@
   }
   &__info {
     text-align: right;
+    transition: 1s ease;
   }
   &__info-title {
     font-size: 100px;
@@ -52,6 +53,7 @@
     margin-bottom: 10px;
     position: relative;
     padding-left: 35px;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -61,6 +63,10 @@
       height: 24px;
       background-image: url("../images/icons/place_black_24dp.svg");
     }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
+    }
   }
   &__contacts-left-city {
     display: block;
@@ -68,6 +74,7 @@
     position: relative;
     padding-left: 35px;
     color: $default-dark;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -77,12 +84,17 @@
       height: 24px;
       background-image: url("../images/icons/apartment_black_24dp.svg");
     }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
+    }
   }
   &__contacts-left-github {
     margin-bottom: 10px;
     position: relative;
     padding-left: 35px;
     color: $default-dark;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -91,6 +103,10 @@
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/iconmonstr-github-1.svg");
+    }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
     }
   }
   &__contacts-right {
@@ -106,6 +122,7 @@
     color: $default-dark;
     text-decoration: none;
     position: relative;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -115,6 +132,10 @@
       height: 24px;
       background-image: url("../images/icons/call_black_24dp.svg");
     }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
+    }
   }
   &__contacts-right-mail {
     display: block;
@@ -122,6 +143,7 @@
     color: $default-dark;
     margin-bottom: 10px;
     position: relative;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -131,12 +153,17 @@
       height: 24px;
       background-image: url("../images/icons/email_black_24dp.svg");
     }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
+    }
   }
   &__contacts-right-linkedin {
     display: block;
     margin-bottom: 10px;
     color: $default-dark;
     position: relative;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -146,11 +173,16 @@
       height: 24px;
       background-image: url("../images/icons/icons8-linkedin.svg");
     }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
+    }
   }
   &__contacts-right-telegram {
     display: block;
     color: $default-dark;
     position: relative;
+    transition: 1s ease;
     &:before {
       content: "";
       position: absolute;
@@ -159,6 +191,10 @@
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/icons8-telegram-app.svg");
+    }
+    &:hover {
+      color:#144aad;
+      transition: 1s ease;
     }
   }
 }
