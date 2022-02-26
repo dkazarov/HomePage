@@ -12,7 +12,7 @@
   }
   &__info {
     text-align: right;
-    transition: 1s ease;
+    transition: 0.5s ease;
   }
   &__info-title {
     font-size: 100px;
@@ -44,30 +44,31 @@
   &__contacts {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   &__contacts-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
     font-size: 20px;
-    padding-top: 25px;
   }
   &__contacts-left-country {
     margin-bottom: 12px;
     position: relative;
     padding-left: 35px;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -10px;
+      top: 0px;
       left: 0;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/place_black_24dp.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
   &__contacts-left-city {
@@ -76,39 +77,38 @@
     position: relative;
     padding-left: 35px;
     color: $default-dark;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -8px;
+      top: 0px;
       left: 0;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/apartment_black_24dp.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
   &__contacts-left-github {
-    margin-bottom: 10px;
     position: relative;
     padding-left: 35px;
     color: $default-dark;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -5px;
+      top: 0px;
       left: 0;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/iconmonstr-github-1.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
   &__contacts-right {
@@ -119,84 +119,84 @@
   }
   &__contacts-right-phone {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     text-align: right;
     color: $default-dark;
     text-decoration: none;
     position: relative;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -5px;
+      top: 0px;
       left: -35px;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/call_black_24dp.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
   &__contacts-right-mail {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: $default-dark;
     margin-bottom: 10px;
     position: relative;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -5px;
+      top: 0px;
       left: -35px;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/email_black_24dp.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
   &__contacts-right-linkedin {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: $default-dark;
     position: relative;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -5px;
+      top: 0px;
       left: -35px;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/icons8-linkedin.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
   &__contacts-right-telegram {
     display: block;
     color: $default-dark;
     position: relative;
-    transition: 1s ease;
+    transition: 0.5s ease;
     &:before {
       content: "";
       position: absolute;
-      top: -5px;
+      top: 0px;
       left: -35px;
       width: 24px;
       height: 24px;
       background-image: url("../images/icons/icons8-telegram-app.svg");
     }
     &:hover {
-      color:#144aad;
-      transition: 1s ease;
+      color: #144aad;
+      transition: 0.5s ease;
     }
   }
 }
