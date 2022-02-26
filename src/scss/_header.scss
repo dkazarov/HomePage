@@ -1,15 +1,164 @@
 .header {
-   &__inner {}
-   &__photo {}
-   &__info {}
-   &__info-title {}
-   &__info-subtitle {}
-   &__contacts {}
-   &__contacts-country {}
-   &__contacts-phone {}
-   &__contacts-city {}
-   &__contacts-mail {}
-   &__contacts-github {}
-   &__contacts-linkedin {}
-   &__contacts-telegram {}
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  &__photo {
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    text-align: right;
+  }
+  &__info-title {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  &__info-subtitle {
+    font-size: 55px;
+    color: #144aad;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 25px;
+      width: 60px;
+      border-bottom: 2px solid #144aad;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 25px;
+      width: 60px;
+      border-bottom: 2px solid #144aad;
+    }
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contacts-left {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 32px;
+  }
+  &__contacts-left-country {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/place_black_24dp.svg");
+    }
+  }
+  &__contacts-left-city {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px;
+    color: $default-dark;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/apartment_black_24dp.svg");
+    }
+  }
+  &__contacts-left-github {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px;
+    color: $default-dark;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/iconmonstr-github-1.svg");
+    }
+  }
+  &__contacts-right {
+    display: block;
+    font-size: 20px;
+    text-align: right;
+    color: $default-dark;
+  }
+  &__contacts-right-phone {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: $default-dark;
+    text-decoration: none;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/call_black_24dp.svg");
+    }
+  }
+  &__contacts-right-mail {
+    display: block;
+    margin-bottom: 10px;
+    color: $default-dark;
+    margin-bottom: 10px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/email_black_24dp.svg");
+    }
+  }
+  &__contacts-right-linkedin {
+    display: block;
+    margin-bottom: 10px;
+    color: $default-dark;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/icons8-linkedin.svg");
+    }
+  }
+  &__contacts-right-telegram {
+    display: block;
+    color: $default-dark;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/icons8-telegram-app.svg");
+    }
+  }
 }
