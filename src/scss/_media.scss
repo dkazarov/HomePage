@@ -1,8 +1,7 @@
 // Header
 @media (min-width: 320px) {
   .header {
-    width: 320px;
-    margin: 0 auto;
+    min-width: 320px;
     &__inner {
       padding-top: 10px;
       display: flex;
@@ -151,4 +150,34 @@
 		&__line {}
 		&__right {}
 }
+}
+
+@media (min-width: 375px) {
+  .header {
+    &__inner {
+      min-width: 345px;
+      padding-top: 10px;
+      margin-bottom: 20px;
+    }
+    &__info {
+      min-width: 345px;
+    }
+  }  
+}
+
+@media (min-width: 420px) {
+  .header {
+    &__inner {
+      min-width: 390px;
+      padding-top: 5px;
+      margin-bottom: 20px;
+    }
+    &__photo {
+      max-width: 250px;
+      margin: 10px auto;
+    }
+    &__info {
+      min-width: 395px;
+    }
+  }  
 }
