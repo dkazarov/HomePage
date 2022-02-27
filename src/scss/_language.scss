@@ -1,0 +1,9 @@
+.language {
+   text-align: center;
+   margin-bottom: 50px;
+   &__item {
+      font-weight: 300;
+      font-size: 25px;
+      color: $brandColor;
+   }
+}
