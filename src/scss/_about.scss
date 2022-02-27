@@ -1,18 +1,29 @@
 .about {
-   padding-top: 50px;
+   padding-top: 100px;
    &__content {
       position: relative;
       text-align: center;
       font-size: 20px;
+      line-height: 30px;
       &:before {
          content: '';
          display: block;
          position: absolute;
-         top: -10px;
+         top: -20px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 300px;
+         border-top: 2px solid #144aad;
+      }
+      &:after {
+         content: '';
+         display: block;
+         position: absolute;
+         bottom: -20px;
          left: 50%;
          transform: translateX(-50%);
          width: 500px;
-         border-top: 2px solid #144aad;
+         border-bottom: 2px solid #144aad;
       }
    }
    &__content span {
