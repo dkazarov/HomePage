@@ -1,27 +1,13 @@
 .additionally {
-   margin-bottom: 50px;
+   margin-bottom: 40px;
    &__inner {
       text-align: center;
    }
    &__title {
       text-align: center;
       font-size: 20px;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       font-weight: 300;
-      color: $brandColor;
-   }
-   &__line {
-      position: relative;
-      &:after {
-         content: '';
-         display: block;
-         position: absolute;
-         bottom: 10px;
-         left: 50%;
-         transform: translateX(-50%);
-         width: 400px;
-         border-bottom: 2px solid #144aad;
-      }
    }
    &__content {
       display: block;
