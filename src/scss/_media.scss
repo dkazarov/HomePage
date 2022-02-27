@@ -2,6 +2,7 @@
 @media (min-width: 320px) {
   .header {
     width: 320px;
+    margin: 0 auto;
     &__inner {
       padding-top: 10px;
       display: flex;
@@ -140,9 +141,10 @@
 		&__title {
       margin-bottom: 5px;
       text-align: center;
+      padding: 10px;
     }
 		&__item {
-      padding: 2px;
+      padding: 5px;
       line-height: 16px;
       text-align: center;
     }
