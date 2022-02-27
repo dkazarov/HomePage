@@ -1,0 +1,42 @@
+@media (min-width: 320px) {
+  .header {
+    &__inner {
+      display: block;
+      margin: 0 auto;
+    }
+    &__photo {
+      display: block;
+      margin: 0 auto;
+      max-width: 250px;
+      margin-bottom: 12px;
+    }
+    &__info-title {
+      font-size: 35px;
+      text-align: center;
+    }
+    &__info-subtitle {
+      font-size: 25px;
+      &:before,
+      &:after {
+        border: none;
+      }
+    }
+    &__contacts {
+      text-align: center;
+      line-height: 10px;
+    }
+    &__contacts-left {
+      font-size: 15px;
+      line-height: 12px;
+      &:before {
+        width: 0;
+      }
+    }
+    &__contacts-left-country {
+      padding: 0;
+    }
+    &__contacts-right {
+      font-size: 12px;
+    }
+  }
+}

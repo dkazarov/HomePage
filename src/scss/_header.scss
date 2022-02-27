@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding-top: 50px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
   }
   &__photo {
     max-width: 320px;
@@ -32,7 +33,7 @@
       top: 30px;
       left: 25px;
       width: 60px;
-      border-bottom: 2px solid #144aad;
+      border-bottom: 2px solid $brandColor;
     }
     &:after {
       content: "";
@@ -45,160 +46,91 @@
   }
   &__contacts {
     display: flex;
+    font-size: 20px;
     justify-content: space-between;
+    position: relative;
   }
   &__contacts-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left;
-    font-size: 20px;
-  }
-  &__contacts-left-country {
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 35px;
-    transition: 0.5s ease;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/icons/place_black_24dp.svg");
-    }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
-    }
-  }
-  &__contacts-left-city {
-    display: block;
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 35px;
     color: $default-dark;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 5px;
     transition: 0.5s ease;
+    &:hover {
+      color: $brandColor;
+      transition: 0.5s ease;
+    }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
-      top: 0px;
-      left: 0;
       width: 24px;
       height: 24px;
-      background-image: url("../images/icons/apartment_black_24dp.svg");
-    }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
+      top: 0px;
+      left: 0px;
     }
   }
-  &__contacts-left-github {
-    position: relative;
-    padding-left: 35px;
-    color: $default-dark;
-    transition: 0.5s ease;
+  &__contacts-left .country {
     &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/icons/iconmonstr-github-1.svg");
+      background-image: url('../images/icons/place_black_24dp.svg');
     }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
+  }
+  &__contacts-left .city {
+    &:before {
+      background-image: url('../images/icons/apartment_black_24dp.svg');
+    }
+  }
+  &__contacts-left .github {
+    &:before {
+      background-image: url('../images/icons/iconmonstr-github-1.svg');
     }
   }
   &__contacts-right {
-    display: block;
-    font-size: 20px;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: $default-dark;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 0px;
+      left: 0px;
+    }
+    &:hover {
+      color: $brandColor;
+      transition: 0.5s ease;
+    }
   }
-  &__contacts-right-phone {
-    display: block;
-    margin-bottom: 12px;
-    text-align: right;
-    color: $default-dark;
+  &__contacts-right .phone {
     text-decoration: none;
-    position: relative;
-    transition: 0.5s ease;
     &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: -35px;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/icons/call_black_24dp.svg");
-    }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
+      background-image: url('../images/icons/call_black_24dp.svg');
     }
   }
-  &__contacts-right-mail {
-    display: block;
-    margin-bottom: 12px;
-    color: $default-dark;
-    margin-bottom: 10px;
-    position: relative;
-    transition: 0.5s ease;
+  &__contacts-right .mail {
+    text-decoration: none;
     &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: -35px;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/icons/email_black_24dp.svg");
-    }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
+      background-image: url('../images/icons/email_black_24dp.svg');
     }
   }
-  &__contacts-right-linkedin {
-    display: block;
-    margin-bottom: 12px;
-    color: $default-dark;
-    position: relative;
-    transition: 0.5s ease;
+  &__contacts-right .linkedin {
+    text-decoration: none;
     &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: -35px;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/icons/icons8-linkedin.svg");
-    }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
+      background-image: url('../images/icons/icons8-linkedin.svg');
     }
   }
-  &__contacts-right-telegram {
-    display: block;
-    color: $default-dark;
-    position: relative;
-    transition: 0.5s ease;
+  &__contacts-right .telegram {
+    text-decoration: none;
     &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: -35px;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/icons/icons8-telegram-app.svg");
-    }
-    &:hover {
-      color: #144aad;
-      transition: 0.5s ease;
+      background-image: url('../images/icons/icons8-telegram-app.svg');
     }
   }
 }
