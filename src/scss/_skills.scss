@@ -1,14 +1,52 @@
 .skills {
-   &__title {}
-   &__inner {}
-   &__tehnologies {}
-   &__tehnologies-list {}
+   padding-top: 65px;
+   &__main-title {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+   &__title {
+      font-size: 30px;
+      text-align: center;
+      border-bottom: 2px solid #144aad;
+      padding: 10px;
+   }
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+   }
+   &__tehnologies {
+      font-size: 25px;
+      border-right: 2px solid #144aad;
+   }
+   &__tehnologies-list {
+      text-align: center;
+      padding-top: 20px;
+      line-height: 35px;
+      font-weight: 300;
+   }
    &__tehnologies-list-item {}
-   &__additionally {}
-   &__additionally-list {}
+   &__additionally {
+      font-size: 25px;
+      border-right: 2px solid #144aad;
+   }
+   &__additionally-list {
+      text-align: center;
+      padding-top: 20px;
+      line-height: 35px;
+      font-weight: 300;
+   }
    &__additionally-list-item {}
-   &__other {}
-   &__other-list {}
+   &__other {
+      font-size: 25px;
+   }
+   &__other-list {
+      text-align: center;
+      padding-top: 20px;
+      line-height: 35px;
+      font-weight: 300;
+   }
    &__other-list-item {}
 }
 .container {
