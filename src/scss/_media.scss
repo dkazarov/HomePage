@@ -3,13 +3,13 @@
   .header {
     width: 320px;
     &__inner {
-      padding-top: 15px;
+      padding-top: 10px;
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
     }
     &__photo {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       max-width: 180px;
       margin: 0 auto;
     }
@@ -22,7 +22,8 @@
       font-size: 18px;
       text-align: center;
       margin-bottom: 15px;
-      &:before, &:after {
+      &:before,
+      &:after {
         display: none;
       }
     }
@@ -50,24 +51,102 @@
       width: 320px;
     }
   }
-}
-
-// About
-.about {
-  &__inner {
-    padding: 0;
-    margin: 0;
-  }
-  &__content {
-    font-size: 15px;
-    line-height: 20px;
-    &:before {
-      width: 200px;
-      top: -15px;
-      border: 1px solid $brandColor;
+  // About
+  .about {
+    margin-bottom: 10px;
+    &__content {
+      font-size: 14px;
+      line-height: 20px;
+      &:before {
+        width: 200px;
+        top: -15px;
+        border: 1px solid $brandColor;
+      }
+      &:after {
+        border: none;
+      }
     }
-    padding: 0;
-    margin: 0;  
   }
+  .skills {
+    padding: 0;
+    margin-bottom: 20px;
+    &__main-title {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+    &__tehnologies {
+      border: none;
+      margin: 0 auto;
+    }
+    &__title {
+      font-size: 20px;
+      text-align: center;
+      padding: 5px;
+    }
+    &__tehnologies-list {
+      display: flex;
+      padding-top: 5px;
+      line-height: 20px;
+    }
+    &__tehnologies-list-item {
+      font-size: 14px;
+      padding: 2px;
+    }
+    &__additionally {
+      border: none;
+      margin: 0 auto;
+    }
+    &__additionally-list {
+      display: flex;
+      padding-top: 5px;
+      line-height: 20px;
+    }
+    &__additionally-list-item {
+      font-size: 16px;
+      padding: 2px;
+    }
+    &__other {
+      border: none;
+      margin: 0 auto;
+    }
+    &__other-list {
+      display: flex;
+      padding-top: 5px;
+      line-height: 20px;
+    }
+    &__other-list-item {
+      font-size: 14px;
+      padding: 2px;
+    }
+  }
+  .education {
+    padding-top: 0px;
+    margin-bottom: 20px;
+		&__inner {
+      font-size: 12px;
+      &:before {
+        border: none;
+      }
+      &:after {
+        border: none;
+      }
+    }
+		&__left {}
+		&__title {
+      margin-bottom: 5px;
+      text-align: center;
+    }
+		&__item {
+      padding: 2px;
+      line-height: 16px;
+      text-align: center;
+    }
+		&__line {}
+		&__right {}
 }
-
+}
