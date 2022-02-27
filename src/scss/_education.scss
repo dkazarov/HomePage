@@ -1,8 +1,50 @@
 .education {
-   &__inner {}
-   &__left {}
-   &__title {}
-   &__item {}
-   &__line {}
-   &__right {}
+   padding-top: 100px;
+   margin-bottom: 120px;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      &:before {
+         content: '';
+         display: block;
+         position: absolute;
+         top: -30px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 300px;
+         border-top: 2px solid #144aad;
+      }
+      &:after {
+         content: '';
+         display: block;
+         position: absolute;
+         bottom: -30px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 500px;
+         border-bottom: 2px solid #144aad;
+      }
+   }
+   &__left {
+      width: 400px;
+   }
+   &__title {
+      margin-bottom: 15px;
+      list-style:decimal;
+      color: $brandColor;
+   }
+   &__item {
+      line-height: 25px;
+   }
+   &__line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid $brandColor;
+   }
+   &__right {
+      text-align: right;
+      width: 400px;
+   }
 }
