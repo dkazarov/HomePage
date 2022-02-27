@@ -16,7 +16,6 @@
    &__inner {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
    }
    &__tehnologies {
       font-size: 25px;
