@@ -165,11 +165,14 @@
 @media (max-width: 659px) {
   .header {
     &__info {
-      max-width: 320px;
+      max-width: 310px;
+      padding-left: 15px;
     }
     &__photo {
       max-width: 200px;
-      padding-left: 20px;
+    }
+    &__info-title {
+      font-size: 35px;
     }
     &__contacts-left {
       font-size: 15px;
@@ -259,10 +262,12 @@
     }
     &__contacts-left {
       font-size: 15px;
-      padding-left: 30px;
+      padding-left: 0px;
+      text-align: left;
       &:before,
       &:after {
         display: block;
+        left: 110px;
       }
     }
     &__contacts-right {
@@ -379,7 +384,7 @@
   }
   .skills__main-title {
     max-width: 375px;
-    font-size: 20px; 
+    font-size: 20px;
   }
   .skills__tehnologies {
     min-width: 50%;
@@ -423,7 +428,6 @@
   .header {
     &__inner {
       max-width: 320px;
-      padding: 0 10px;
     }
     &__photo {
       max-width: 210px;
@@ -431,24 +435,13 @@
     &__info-title {
       text-align: center;
     }
-  //   &__contacts {
-  //     max-width: 300px;
-  //   }
-  //   &__contacts-left {
-  //     padding-left: 0;
-  //     &:before, :after {
-  //       display: none;
-  //     }
-  //   }
-  //   &__contacts-right {
-  //     padding-right: 0;
-  //     &:before, :after {
-  //       display: none;
-  //     }
-  //   }
   }
   .about {
     margin-bottom: 30px;
+  }
+  .about__inner {
+    max-width: 320px;
+    padding: 0;
   }
   .skills {
     margin-bottom: 40px;
