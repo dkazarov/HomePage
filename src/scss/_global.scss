@@ -21,12 +21,12 @@ img {
 	display: block;
 }
 
-body {
+html {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  min-width: 320px;
   scroll-behavior: smooth;   
   overflow-x: hidden;
+  min-width: 100vw;
 }
 
 .container{
