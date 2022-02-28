@@ -138,41 +138,8 @@
   .skills__main-title {
     font-size: 30px;
   }
-<<<<<<< HEAD
-}
-
-@media (max-width: 659px) {
-  .header {
-    &__info {
-      max-width: 310px;
-      padding-left: 15px;
-    }
-    &__photo {
-      max-width: 200px;
-    }
-    &__info-title {
-      font-size: 35px;
-    }
-    &__contacts-left {
-      font-size: 15px;
-      padding: 0;
-      &:before,
-      &:after {
-        display: none;
-      }
-    }
-    &__contacts-right {
-      font-size: 14px;
-      padding-right: 0;
-      &:before,
-      &:after {
-        display: none;
-      }
-    }
-=======
   .skills__title {
     font-size: 20px;
->>>>>>> master
   }
   .skills__tehnologies-list-item {
     font-size: 16px;
@@ -211,50 +178,6 @@
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 549px) {
-  .header {    
-    &__inner {
-      text-align: center;
-      padding-top: 20px;
-    }
-    &__info {
-      min-width: 100%;
-    }
-    &__info-title {
-      text-align: center;
-    }
-    &__info-subtitle {
-      text-align: center;
-    }
-    &__photo {
-      max-width: 250px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    &__contacts-left {
-      font-size: 15px;
-      padding-left: 0px;
-      text-align: left;
-      &:before,
-      &:after {
-        display: block;
-        left: 110px;
-      }
-    }
-    &__contacts-right {
-      font-size: 14px;
-      padding-right: 10px;
-      &:before,
-      &:after {
-        display: block;
-      }
-    }
-  }
-}
-
-=======
->>>>>>> master
 @media (max-width: 425px) {
   .header__photo {
     padding-left: 0;
@@ -367,14 +290,8 @@
   .skills {
     padding-top: 30px;
   }
-<<<<<<< HEAD
-  .skills__main-title {
-    max-width: 375px;
-    font-size: 20px;
-=======
   .skills__title {
     font-size: 16px;
->>>>>>> master
   }
   .skills__tehnologies-list-item {
     font-size: 14px;
@@ -412,34 +329,12 @@
   }
 }
 
-<<<<<<< HEAD
 @media (max-width: 320px) {
-  .header {
-    &__inner {
-      max-width: 320px;
-    }
-    &__photo {
-      max-width: 210px;
-    }
-    &__info-title {
-      text-align: center;
-    }
-  }
-  .about {
-    margin-bottom: 30px;
-  }
-  .about__inner {
-    max-width: 320px;
-    padding: 0;
-  }
-  .skills {
-    margin-bottom: 40px;
-=======
-@media (min-width: 320px) {
+   .header__photo {
+      max-width: 200px;
+   }
   .header__info-title {
     margin-bottom: 20px;
-  }
-  .header__inner {
   }
   .header__info-subtitle {
     font-size: 24px;
@@ -449,7 +344,6 @@
   }
   .header__contacts-right {
     font-size: 14px;
->>>>>>> master
   }
   .skills__inner {
     display: flex;
