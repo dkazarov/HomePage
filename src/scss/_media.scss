@@ -310,7 +310,7 @@
       max-width: 425px;
     }
     &__main-title {
-      min-width: 100vw;
+      max-width: 425px;
     }
     &__tehnologies-list-item {
       padding: 5px;
@@ -370,6 +370,7 @@
     font-size: 14px;
   }
   .skills {
+    max-width: 375px;
     margin-bottom: 40px;
   }
   .skills__inner {
@@ -379,7 +380,8 @@
   }
   .skills__main-title {
     max-width: 375px;
-    font-size: 20px; 
+    font-size: 20px;
+    text-align: center;
   }
   .skills__tehnologies {
     min-width: 50%;
