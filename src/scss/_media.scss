@@ -329,7 +329,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .header__info-title {
     margin-bottom: 20px;
   }
