@@ -238,7 +238,7 @@
 }
 
 @media (max-width: 549px) {
-  .header {
+  .header {    
     &__inner {
       text-align: center;
       padding-top: 20px;
@@ -279,22 +279,37 @@
 @media (max-width: 425px) {
   .header {
     &__inner {
-      min-width: 100vw;
+      min-width: 100%;
+      margin-bottom: 40px;
+    }
+    &__contacts-left {
+      padding-left: 0px;
+      text-align: left;
+      &:before {
+        display: none;
+      }
+    }
+    &__contacts-right {
+      padding-right: 0;  
     }
   }
   .about__inner {
-    min-width: 100vw;
+    max-width: 420px;
   }
   .about__content {
     &:after {
-      width: 300px;
+      width: 200px;
+    }
+    &:before {
+      width: 200px;
     }
   }
   .skills {
-    &__main-title {
-      min-width: 100vw;
-    }
+    margin-bottom: 40px;
     &__inner {
+      max-width: 425px;
+    }
+    &__main-title {
       min-width: 100vw;
     }
     &__tehnologies-list-item {
@@ -303,9 +318,9 @@
     }
   }
   .education {
+    margin-bottom: 40px;
     &__inner {
-      min-width: 100vw;
-      padding: 0;
+      max-width: 420px;
       &:after {
         width: 300px;
       }
@@ -318,14 +333,18 @@
     }
   }
   .additionally {
+    margin-bottom: 10px;
     &__content {
-      min-width: 100vw;
+      max-width: 420px;
       font-size: 15px;
     }
     &__title {
       text-align: center;
       min-width: 100vw;
     }
+  }
+  .language {
+    margin-bottom: 20px;
   }
   .language__item {
     text-align: center;
@@ -336,14 +355,127 @@
 @media (max-width: 375px) {
   .header {
     &__inner {
-      min-width: 100vw;
+      max-width: 375px;
       margin-bottom: 40px;
+    }
+    &__photo {
+      max-width: 250px;
+      margin-bottom: 20px;
     }
   }
   .about__content {
-    min-width: 100vw;
+    max-width: 375px;
   }
   .about__content {
     font-size: 14px;
+  }
+  .skills {
+    margin-bottom: 40px;
+  }
+  .skills__inner {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100vw;
+  }
+  .skills__tehnologies {
+    min-width: 50vw;
+    border-right: 0;
+    border-width: 200px;
+  }
+  .skills__additionally {
+    min-width: 50vw;
+    border-right: 0;
+    border-width: 200px;
+  }
+  .skills__other {
+    min-width: 100vw;
+    border-right: 0;
+    border-width: 200px;
+  }
+  .about {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    &__inner {
+      max-width: 320px;
+      padding: 0 10px;
+    }
+    &__photo {
+      max-width: 210px;
+    }
+    &__info-title {
+      text-align: center;
+    }
+  //   &__contacts {
+  //     max-width: 300px;
+  //   }
+  //   &__contacts-left {
+  //     padding-left: 0;
+  //     &:before, :after {
+  //       display: none;
+  //     }
+  //   }
+  //   &__contacts-right {
+  //     padding-right: 0;
+  //     &:before, :after {
+  //       display: none;
+  //     }
+  //   }
+  }
+  .about {
+    margin-bottom: 30px;
+  }
+  .skills {
+    margin-bottom: 40px;
+  }
+  .skills__inner {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100vw;
+  }
+  .skills__tehnologies {
+    min-width: 50vw;
+    border-right: 0;
+    border-width: 200px;
+  }
+  .skills__additionally {
+    min-width: 50vw;
+    border-right: 0;
+    border-width: 200px;
+  }
+  .skills__other {
+    min-width: 100vw;
+    border-right: 0;
+    border-width: 200px;
+  }
+  .education {
+    margin-bottom: 20px;
+  }
+  .education__inner {
+    &:before {
+      width: 200px;
+    }
+    &:after {
+      margin-bottom: 20px;
+    }
+  }
+  .additionally {
+    margin-bottom: 20px;
+  }
+  .education__inner {
+    min-width: 320px;
+  }
+  .additionally__title {
+    margin-bottom: 10px;
+  }
+  .additionally__content {
+    max-width: 320px;
+    font-size: 13px;
+  }
+  .language {
+    margin-bottom: 25px;
   }
 }
