@@ -158,8 +158,8 @@
     padding-left: 5px;
   }
   .education {
-     padding-top: 70px;
-     margin-bottom: 50px;
+    padding-top: 70px;
+    margin-bottom: 50px;
   }
   .education__title {
     text-align: center;
@@ -174,6 +174,85 @@
     text-align: center;
   }
   .language__item {
-     font-size: 20px;
+    font-size: 20px;
   }
 }
+
+@media (max-width: 425px) {
+  .header__photo {
+    padding-left: 0;
+    max-width: 150px;
+    margin-right: 10px;
+  }
+  .header__info {
+    max-width: 100%;
+  }
+  .header__info-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .header__info-subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .header__contacts-left {
+    font-size: 14px;
+  }
+  .header__contacts-right {
+    font-size: 14px;
+  }
+  .about__content {
+    font-size: 14px;
+    line-height: 20px;
+    &:before {
+      width: 200px;
+    }
+    &:after {
+      width: 300px;
+    }
+  }
+  .skills__title {
+    font-size: 16px;
+  }
+  .skills__tehnologies-list-item {
+    font-size: 14px;
+  }
+  .skills__additionally {
+    font-size: 80px;
+  }
+  .skills__additionally-list-item {
+    font-size: 14px;
+  }
+  .skills__other {
+    font-size: 80px;
+  }
+  .skills__other-list-item {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  .additionally {
+     margin-bottom: 20px;
+  }
+  .education__inner {
+   &::before {
+      width: 200px;
+   }
+     &:after {
+        width: 300px;
+     }
+  }
+  .education__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .education__item {
+    font-size: 14px;
+  }
+  .additionally__content {
+   font-size: 16px;   
+  }
+  .language__item {
+     font-size: 16px;
+  }
+}
+
