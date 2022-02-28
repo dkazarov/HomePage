@@ -359,7 +359,7 @@
       margin-bottom: 40px;
     }
     &__photo {
-      max-width: 250px;
+      max-width: 200px;
       margin-bottom: 20px;
     }
   }
@@ -373,27 +373,49 @@
     margin-bottom: 40px;
   }
   .skills__inner {
+    max-width: 375px;
     display: flex;
     flex-wrap: wrap;
-    min-width: 100vw;
+  }
+  .skills__main-title {
+    max-width: 375px;
+    font-size: 20px; 
   }
   .skills__tehnologies {
-    min-width: 50vw;
+    min-width: 50%;
     border-right: 0;
     border-width: 200px;
   }
   .skills__additionally {
-    min-width: 50vw;
+    min-width: 50%;
     border-right: 0;
     border-width: 200px;
   }
   .skills__other {
-    min-width: 100vw;
+    min-width: 100%;
     border-right: 0;
     border-width: 200px;
   }
   .about {
     margin-bottom: 30px;
+  }
+  .additionally {
+    text-align: center;
+  }
+  .additionally__inner {
+    max-width: 375px;
+  }
+  .additionally__title {
+    padding: 0;
+    text-align: center;
+  }
+  .additionally__content {
+    font-size: 13px;
+  }
+  .education__inner {
+    &::after {
+      width: 200px;
+    }
   }
 }
 
