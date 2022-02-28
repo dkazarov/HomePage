@@ -256,3 +256,40 @@
   }
 }
 
+@media (max-width: 425px) {
+   .header__info-title {
+      font-size: 24px;
+   }
+   .header__info-subtitle {
+      font-size: 14px;
+   }
+   .header__contacts-left {
+      font-size: 12px;
+   }
+   .header__contacts-right {
+      font-size: 12px;
+   }
+   .about__content {
+      font-size: 12px;
+      line-height: 18px;
+   }
+   .skills {
+      padding-top: 30px;
+   }
+   .education__title {
+       font-weight: 400;  
+   }
+   .additionally__title {
+      font-size: 18px;
+   }
+   .additionally__content {
+      font-size: 14px;
+   }
+   .language {
+      margin-bottom: 20px;
+   }
+   .language__item {
+      font-size: 14px;
+   }
+}
+
