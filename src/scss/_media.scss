@@ -277,9 +277,6 @@
 }
 
 @media (max-width: 425px) {
-  .container {
-    min-width: 100vw;
-  }
   .header {
     &__inner {
       min-width: 100vw;
@@ -288,32 +285,65 @@
   .about__inner {
     min-width: 100vw;
   }
-  .skills__main-title {
-    min-width: 100vw;
+  .about__content {
+    &:after {
+      width: 300px;
+    }
   }
-  .skills__inner {
-    min-width: 100vw;
+  .skills {
+    &__main-title {
+      min-width: 100vw;
+    }
+    &__inner {
+      min-width: 100vw;
+    }
+    &__tehnologies-list-item {
+      padding: 5px;
+      line-height: 18px;
+    }
   }
-  .education__inner {
-    min-width: 100vw;
-    padding: 0;
+  .education {
+    &__inner {
+      min-width: 100vw;
+      padding: 0;
+      &:after {
+        width: 300px;
+      }
+    }
+    &__left {
+      padding: 5px;
+    }
+    &__right {
+      padding: 5px;
+    }
   }
-  .education__left {
-    padding: 0;
-  }
-  .education__right {
-    padding: 0;
-  }
-  .additionally__content {
-    min-width: 100vw;
-    font-size: 15px;
-  }
-  .additionally__title {
-    text-align: center;
-    min-width: 100vw;
+  .additionally {
+    &__content {
+      min-width: 100vw;
+      font-size: 15px;
+    }
+    &__title {
+      text-align: center;
+      min-width: 100vw;
+    }
   }
   .language__item {
     text-align: center;
     min-width: 100vw;  
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__inner {
+      min-width: 100vw;
+      margin-bottom: 40px;
+    }
+  }
+  .about__content {
+    min-width: 100vw;
+  }
+  .about__content {
+    font-size: 14px;
   }
 }
