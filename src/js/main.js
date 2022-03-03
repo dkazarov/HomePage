@@ -1,5 +1,5 @@
 'use strict';
 
-import str from './module/hello';
+import observerScroll from './intersectionScroll';
 
-console.log(str);
+observerScroll();
