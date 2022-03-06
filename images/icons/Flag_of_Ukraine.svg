@@ -1,8 +1,1 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#005BBB" d="M0 0h24v12H0z"/><path fill="#FFD500" d="M0 12h24v12H0z"/></svg>
-=======
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
-<rect width="1200" height="800" fill="#005BBB"/>
-<rect width="1200" height="400" y="400" fill="#FFD500"/>
-</svg>
->>>>>>> master
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#005BBB" d="M0 0h24v24H0z"/><path fill="#FFD500" d="M0 12h24v24H0z"/></svg>
